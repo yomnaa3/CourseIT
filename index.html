@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="opacity: 0.9 ; background-color: #fff8f5;">
+        <div class="container-fluid">
+          <a href="#"><img src="images/Screenshot 2023-11-17 at 23-49-21 Icons LOGO.com.png" class=" mx-3 shadow logo" alt="Logo" width="65" height="65" draggable="false"></a>
+          <a class="navbar-brand text-info m-3" href="#">CourseIT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #372925;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #372925;">Business</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle border-2 rounded-3" href="#"
+                  id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tracks
+                </button>
+                <ul class="dropdown-menu mt-3 fade" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Fullstack Development</a></li>
+                  <li><a class="dropdown-item" href="#">Front-end Development</a></li>
+                  <li><a class="dropdown-item" href="#">Back-end Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Android Application Development</a></li>
+                  <li><a class="dropdown-item" href="#">IOS Application Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Software Testing</a></li>
+                  <li><a class="dropdown-item" href="#">Internet of Things (IoT)</a></li>
+                  <li><a class="dropdown-item" href="#">User Experience (UX) Design</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" style="color: #372925;" href="#" tabindex="-1" aria-disabled="true">Setting</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search"></form>
+              <button class="btn text-white shadow-lg navbtn" type="submit">Search</button>
+              <button class="btn mx-3 navbtn text-white shadow-lg navbtn" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+            <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- form -->
+            <form>
+              <div class="m-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control border-3 border-dark rounded-2"
+                  aria-describedby="emailHelp" placeholder="Email Address@example.com">
+                <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+              </div>
+              <div class="m-3">
+                <label class="form-label ">Password</label>
+                <input type="password" class="form-control border-3 border-dark rounded-2" placeholder="Password">
+                <!-- <input type="checkbox"> -->
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input class="form-check-input " type="checkbox" role="switch" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Remmember me</label>
+                </div>
+              </div>
+            </form>
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn navbtn text-light">Login</button>
+              <button type="button" class="btn navbtn text-light" data-bs-dismiss="modal">Close</button>
+            </div> <!-- /model-footer -->
+          </div> <!-- /model-body -->
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+
+    <aside>
+      <div class="container-fluid p-0 " style="position: relative;">
+        <div class="d-flex flex-column justify-content-between ms-auto"
+          style="position: fixed;z-index:40; top:200px;right:20px;">
+          <div class="aside-icon"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+          <div class="aside-icon"><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+          <div class="aside-icon"><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+          <div class="aside-icon"><a href="#"><i class="fab fa-linkedin"></i></a></div>
+          <div class="aside-icon"><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+        </div>
+    </aside>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner" style="height:650px;">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/Java-Development-SE.png" class="d-block w-100" alt="..." style="height: 650px;" draggable="false">
+          <div class="carousel-caption">
+            <h1 class="text-white">FullStack Development</h1>
+            <p class="text-white">The Best Learning Course for Fullstack !</p>
+            <a href="#" class="btn navbtn text-white text-shadow" target="_blank">Preview Course</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/HTML.jpg" class="d-block w-100" alt="..." style="height: 650px;" draggable="false">
+          <div class="carousel-caption w-30">
+            <h1 class="text-white">Front-end Development</h1>
+            <p class="text-white">The Best Learning Course for Front-end!</p>
+            <a href="#" class="btn navbtn text-white text-shadow" target="_blank">Preview Course</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/opensrc.jpg" class="d-block w-100" alt="..." style="height: 650px;" draggable="false">
+          <div class="carousel-caption">
+            <h1 class="text-white">Back-end Development</h1>
+            <p class="text-white">The Best Learning course for Back-end!</p>
+            <a href="#" class="btn navbtn text-white text-shadow" target="_blank">Preview Course</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Developing-Mobile-Applications-for-Android-using-Java.png" class="d-block w-100" alt="..." style="height: 650px;" draggable="false">
+          <div class="carousel-caption">
+            <h1 class="text-white">Android Application Development</h1>
+            <p class="text-white">The Best Learning Kotlin for Android !</p>
+            <a href="#" class="btn navbtn text-white text-shadow" target="_blank">Preview Course</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="card w-100 p-3 shadow-lg" style="border-radius:0;">
+      <div class="card-body">
+        <h5 class="card-title wel">Let's start learning</h5>
+        <p class="card-text m-4">Develop your skills Learn in-demand programming languages like Python, Java, C++, and more. Find the course for you..Got a dream?
+          We have thousands of real-world experts that can help. Start learning the skills you need to make it happen.</p>
+        <a href="#" class="btn navbtn text-white btn-md">Get Courses</a>
+      </div>
+    </div>
+    <hr>
+    <div class="mx-auto my-3 p-5 text-center text-shadow rounded-2 shadow-lg"
+        style="background-color: #EDE1D1;">
+        <h1 class="wel" style="font-size: 45px;">Topics recommended for you</h1>
+      </div>
+      <div class="accordion accordion-flush shadow-lg" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed wel" type="button" style="font-size:20px;" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Agile Crash Course for Beginners
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Everything you need to know about Agile Software Development
+              Agile Values,
+              Agile Principles,
+              Scrum.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed wel" style="font-size:20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Flutter - Animations from Zero to Hero
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Learn Animations in Flutter for Beginners Basics of Flutter Animations Best Practices for Animations Implicit Animations.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed wel" style="font-size:20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ISTQB Foundation Level Complete Training
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The best way to prepare for the ISTQB Foundation Level Exam ISTQB Foundation Level Syllabus Content Black Box & White Box Techniques Difference between Static Testing & Dynamic Testing.</div>
+          </div>
+        </div>
+      </div> 
+  
+          <hr>
+          <div class="bg-img">
+
+          </div><!-- bg-img -->
+          <div class="mx-auto my-3 p-3 text-center text-shadow rounded-2 shadow-lg"
+        style="background-color: #EDE1D1; color :#372925;">
+        <h1 class="wel" style="font-size: 50px;">Popular Courses</h1>
+      </div>
+          <div class="pop">
+            <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/ES6.jpg" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">FullStack Development</h5>
+              <p class="card-text my-3">A professional responsible for working on both front-end and back-end development processes.</p>
+              <a href="#" class="btn btn-primary navbtn border-dark">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" >
+            <img src="images/HTML.jpg" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">Front-end Development</h5>
+              <p class="card-text">His job is to take the vision and design concept from the client and implement it through code. </p>
+              <a href="#" class="btn btn-primary border-dark navbtn">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/React js@2x.png" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">Back-end Development</h5>
+              <p class="card-text">
+                relating to, associated with, or occurring in the latter or final part or period of an undertaking or business arrangement.
+              </p>
+              <a href="#" class="btn btn-primary border-dark navbtn" style="margin-top: -20px;">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Developing-Mobile-Applications-for-Android-using-Java.png" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">Android Application Development</h5>
+              <p class="card-text">the process by which applications are created for devices running the Android operating system.</p>
+              <a href="#" class="btn navbtn btn-primary border-dark">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Java-Development-SE.png" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title" >IOS Application Development</h5>
+              <p class="card-text">the process of making mobile applications for Apple hardware, including iPhone,iPod Touch. </p>
+              <a href="#" class="btn btn-primary border-dark navbtn" style="margin-bottom:30px ;">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow mx-3" >
+            <img src="images/opensrc.jpg" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">Software Testing</h5>
+              <p class="card-text">the process of evaluating and verifying that a software product or application does what it is supposed to do.</p>
+              <a href="#" class="btn btn-primary border-dark navbtn">Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" >
+            <img src="images/IoT-Lab-Hands-on-Devices.png" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">Internet of Things (IoT)</h5>
+              <p class="card-text">connected devices and the technology that facilitates communication between devices and the cloud.</p>
+              <a href="#" class="btn navbtn border-dark btn-primary"style="margin-top:-20px;" >Enroll</a>
+            </div>
+          </div>
+          <div class="card track col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <img src="images/Artboard 31@2x.png" class="card-img-top" alt="..." draggable="false">
+            <div class="card-body">
+              <h5 class="card-title">User Experience (UX) Design</h5>
+              <p class="card-text mt-2">how a user feels while interacting with a product, system or service. It includes a person's perceptions of utility, ease of use, and efficiency.</p>
+              <a href="#" class="btn navbtn border-dark btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div><!-- pop -->
+        <div class="bg-img bg-img2">
+
+        </div><!-- bg-img --> <hr>
+        <div class="mx-auto my-3 p-4 text-center text-shadow rounded-2 shadow-lg"
+        style="background-color: #EDE1D1; color: #372925;">
+        <h1 class="wel" style="font-size: 50px;">Instructors</h1>
+      </div>
+      <section class="wrapper">
+        <div class="container" style="width: 100%; min-height: 500px;">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 appr">
+              <div class="card card-hover text-white card-has-bg click-col thankcard"
+                style="background-image:url('images/businessman-black-suit-holding-his-tasklist-makes-thumb-up_114579-15902.avif');">
+                <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                  alt="All thanks and appreciation">
+                <div class="card-img-overlay d-flex flex-column">
+                  <div class="card-body">
+                    <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                    <small><i class="far fa-clock"></i> november 25th 2023</small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="images/businessman-black-suit-holding-his-tasklist-makes-thumb-up_114579-15902.avif" alt="Generic placeholder image" width="100" height="100" draggable="false">
+                      <div class="media-body">
+                        <h6 class="my-1 text-white d-block">Eng. Bassem Boshra</h6>
+                        <small>IoT value chain</small>
+                      </div><!-- media- body-->
+                    </div><!-- media -->
+                  </div> <!-- card-footer-->
+                </div> <!-- /card-img-overlay -->
+                </div> <!-- /card -->
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 appr">
+              <div class="card card-hover text-white card-has-bg click-col thankcard"
+                style="background-image:url('images/young-tender-curly-girl-holding-documents_176420-239.avif');">
+                <img class="card-img d-none" alt="All thanks and appreciation">
+                <div class="card-img-overlay d-flex flex-column">
+                  <div class="card-body">
+  
+                    <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                    <small><i class="far fa-clock"></i> november 25th 2023</small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="images/young-tender-curly-girl-holding-documents_176420-239.avif" alt="Generic placeholder image"width="100" height="100" draggable="false">
+                      <div class="media-body">
+                        <h6 class="my-1 text-white d-block">Eng. Omnia amr</h6>
+                        <small>Front-end Developer</small>
+                      </div>
+                    </div>
+                  </div> <!-- card-footer -->
+                </div> <!-- /card-img-overlay -->
+              </div> <!-- /card -->
+            </div> <!-- /card3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 card3 appr">
+              <div class="card card-hover text-white card-has-bg click-col thankcard"
+                style="background-image:url('images/handsome-business-man-wearing-suit-holding-laptop-computer-pointing-with-finger-camera-smiling-cheerfully-standing-white-background_141793-54061.avif');">
+                
+                <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="All thanks and appreciation" draggable="false">
+                <div class="card-img-overlay d-flex flex-column">
+                  <div class="card-body">
+                    <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                    <small><i class="far fa-clock"></i> november 25th 2023</small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="images/handsome-business-man-wearing-suit-holding-laptop-computer-pointing-with-finger-camera-smiling-cheerfully-standing-white-background_141793-54061.avif" alt="Generic placeholder image"width="100" height="100" draggable="false">
+                      <div class="media-body">
+                        <h6 class="my-1 text-white d-block ">Eng. ramy waled</h6>
+                        <small>Back-end Developer</small>
+                      </div>
+                    </div>
+                  </div> <!-- card-footer -->
+                </div> <!-- /card-img-overlay -->
+              </div> <!-- /card -->
+            </div> <!-- /card3 -->
+           </div><!-- row -->
+          </div> 
+      </section>
+
+      <hr class="my-4">
+      <div class=" my-2 p-4 text-center text-shadow shadow-lg mb-4"
+        style="background-color: #EDE1D1; color: #372925;">
+        <h1 class="wel p-2" style="font-size: 45px;">Courses to get you started</h1>
+      </div>
+    <section class="container light">
+      <div class="container py-2">
+        
+        <!-- <div class="h1 text-center title" id="pageHeaderTitle" style="font-size: 30px;"></div> -->
+
+        <article class="postcard d-flex light blue"> 
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/HTML.jpg" alt="Image Title" draggable="false"/>
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue mx-2"><a href="#">Front-end web Development</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i> Mon, nov 21th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">-62 hours on-demand video <br>
+              -66 articles <br>
+              -118 downloadable resources <br>
+              -Access on mobile and TV <br>
+              -Full lifetime access  <br>
+              -Certificate of completion</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><a href="#"><i class="fas fa-code"></i> Exercises</a></li>
+              <li class="tag__item mx-1" ><a href="#"><i class="fas fa-file-code"></i> PDFs</a></li>
+              <li class="tag__item play blue mx-1"><a href="#"><i class="fas fa-play mr-2"></i> Apply Coupon</a></li>
+            </ul>
+          </div>
+        </article> <!-- /1st card -->
+        <article class="postcard d-flex light red"> <!-- 2nd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/Java-Development-SE.png" alt="Image Title" draggable="false"/>
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red"><a href="#">Back-end Development</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i> Mon, nov 25th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt my-2"> -42 hours on-demand video <br>
+              -3 articles <br>
+              -Access on mobile and TV <br>
+              -Full lifetime access <br>
+              -Certificate of completion</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><a href="#"><i class="fas fa-code"></i> Exercises</a></li>
+              <li class="tag__item mx-1" ><a href="#"><i class="fas fa-file-code"></i> PDFs</a></li>
+              <li class="tag__item play blue mx-1"><a href="#"><i class="fas fa-play mr-2"></i> Apply Coupon</a></li>
+            </ul>
+          </div>
+        </article> <!-- /2nd card -->
+        <article class="postcard d-flex  light green"> <!-- 3rd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/JavaScript.jpg" alt="Image Title" draggable="false" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green mx-2"><a href="#">FullStack Development</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-11-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i> Mon, nov 25th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt my-2">-71 hours on-demand video <br>
+              -6 coding exercises <br>
+              -21 articles <br>
+              -159 downloadable resources <br>
+              -Full lifetime access <br>
+              -Certificate of completion</div>
+            <ul class="postcard__tagbox mt-5  fullst">
+              <li class="tag__item"><a href="#"><i class="fas fa-code"></i> Exercises</a></li>
+              <li class="tag__item mx-1" ><a href="#"><i class="fas fa-file-code"></i> PDFs</a></li>
+              <li class="tag__item play blue mx-1"><a href="#"><i class="fas fa-play mr-2"></i> Apply Coupon</a></li>
+            </ul>
+          </div>
+        </article> <!-- /3rd card -->
+        <article class="postcard d-flex light yellow "> <!-- 4th card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/React js@2x.png" alt="Image Title" draggable="false" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title yellow"><a href="#">Flutter & Dart Essentials-Build for Mobile Apps</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Mon, nov 25th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt"> -38 hours on-demand video <br>
+              -10 articles <br>
+              -11 downloadable resources <br>
+              -Access on mobile and TV <br>
+              -Full lifetime access <br>
+              -Certificate of completion</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><a href="#"><i class="fas fa-code"></i> Exercises</a></li>
+              <li class="tag__item mx-1" ><a href="#"><i class="fas fa-file-code"></i> PDFs</a></li>
+              <li class="tag__item play blue mx-1"><a href="#"><i class="fas fa-play mr-2"></i> Apply Coupon</a></li>
+            </ul>
+          </div>
+        </article> <!-- /4th card -->
+      </div> <!-- /container -->
+    </section> <!-- /postcard section -->
+
+
+    <hr>   
+    <div class="mx-auto my-auto p-3 text-center text-shadow rounded-2 shadow-lg"
+      style="background-color:#EDE1D1; color: #372925;">
+      <h1 class="wel" style="font-size: 50px;">Feedback </h1>
+    </div>
+    <div class="card p-3  text-white shadow-lg"
+          style="background-color: #EDE1D1; color: #372925;">
+          <div class="card-body">
+            <h4 class="card-title text-dark">For more FAQ <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjtp5Tm-96CAxUxPewKHZn7CswQFnoECA4QAQ&url=https%3A%2F%2Fwww.ed.gov%2Fanswers%2F&usg=AOvVaw0VkhXT-oZt0IxAqDl8N1DA&opi=89978449"
+                target="_blank" rel="noopener">Press Here</a></h4>
+            <textarea id="sentence" class="form-control mx-auto mt-3" rows="4" id="comment" placeholder="Comment"
+              name="text"></textarea>
+              <br>
+              <button
+              class="btn btn-light text-dark btntranslate shadow-lg"
+              onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px; color: #EDE1D1;">
+              submit
+            </button>
+          </div>
+        </div>
+
+
+    <!-- join us -->
+    <h2 class="text-center text-light title" style="font-size: 30px;">Join Us</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-center sub">
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+          <div class="card-body text-dark d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Visit us</h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;  " src="images/face.jpg" type="image" draggable="false"
+              alt="icon">
+            <a href="#" target="_blank" class="card-link h4">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+          <div class="card-body text-dark d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Connect</h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/linkedin.png" type="image" draggable="false"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body text-dark d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Like the page</h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/insta.jpg" type="image" draggable="false"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body text-dark d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Subscribe now</h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/images.png" type="image"alt="icon" draggable="false">
+            <a href="" target="_blank" class="card-link h4">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- /join us -->
+    <!-- footer -->
+    <footer class="pb-5" style="background-color: #d8c0a1; color: #372925;">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5><img src="images/Screenshot 2023-11-17 at 23-49-21 Icons LOGO.com.png" alt="good pic" class="logoicon rounded-circle" draggable="false"></h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p><a href="#">CourseIT Business</a></p>
+              <p><a href="#">Teach on CourseIT</a></p>
+              <p><a href="#">Get the app</a></p>
+              <p><a href="#">About us</a></p>
+              <p><a href="#">Contact us</a></p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <img src="images/Screenshot 2023-11-17 at 23-49-21 Icons LOGO.com.png" alt="good pic" class="logoicon rounded-circle" draggable="false">
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="#">Help and Support</a></p>
+            <p><a href="#">Affilliate</a></p>
+            <p><a href="#">Investors</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <img src="images/Screenshot 2023-11-17 at 23-49-21 Icons LOGO.com.png" alt="good pic" class="logoicon rounded-circle" draggable="false">
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Terms</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Cookie Settings</a></p>
+            <p><a href="#">Sitemap</a></p>
+            <p><a href="#">Accessibility Statement</a></p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block wel">Copyright &copy; 2023 all rights reserved to Information Technology Institute</span>
+      <hr class="border-top border-3 border-light my-3"> 
+      <!-- /footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script  src="js/script.js"></script>
+</body>
+</html>
